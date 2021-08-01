@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+  db:
+    build:
+      context: ./
+      dockerfile: db.Dockerfile
+    container_name: hotel-reservation-feature-driven-db
+    hostname: db
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_general_ci
+    volumes:
+      - 05849be4a593862863f1a7bd:/var/lib/mysql
+      - 47e12c50a0e032305abf5f10:/var/run/mysqld
+      - ./dbaccess.cnf:/dbaccess.cnf
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_DATABASE: hotel_reservation_feature_driven
+      MYSQL_ROOT_PASSWORD: password
+
+volumes:
+  # database data
+  05849be4a593862863f1a7bd:
+  # database socket
+  47e12c50a0e032305abf5f10:

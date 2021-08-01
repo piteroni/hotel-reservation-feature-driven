@@ -17,25 +17,25 @@ internal fun insert() {
                 type = it
                 dayFee = 9000
                 capacity = 4
-                imagePath = "/assets/image/japanese-style-room.jpg"
+                imagePath = "/image/japanese-style-room.jpg"
             }.also {
                 RoomIntroductionImage.new {
-                    path = "/assets/image/japanese-style-room-introduction-1.jpg"
+                    path = "/image/japanese-style-room-introduction-1.jpg"
                     room = it
                 }
 
                 RoomIntroductionImage.new {
-                    path = "/assets/image/japanese-style-room-introduction-2.jpg"
+                    path = "/image/japanese-style-room-introduction-2.jpg"
                     room = it
                 }
 
                 RoomIntroductionImage.new {
-                    path = "/assets/image/japanese-style-room-introduction-3.jpg"
+                    path = "/image/japanese-style-room-introduction-3.jpg"
                     room = it
                 }
 
                 RoomIntroductionImage.new {
-                    path = "/assets/image/japanese-style-room-introduction-4.jpg"
+                    path = "/image/japanese-style-room-introduction-4.jpg"
                     room = it
                 }
             }
@@ -51,25 +51,25 @@ internal fun insert() {
                 type = it
                 dayFee = 8000
                 capacity = 3
-                imagePath = "/assets/image/western-style-room.jpg"
+                imagePath = "/image/western-style-room.jpg"
             }.also {
                 RoomIntroductionImage.new {
-                    path = "/assets/image/western-style-room-introduction-1.jpg"
+                    path = "/image/western-style-room-introduction-1.jpg"
                     room = it
                 }
 
                 RoomIntroductionImage.new {
-                    path = "/assets/image/western-style-room-introduction-2.jpg"
+                    path = "/image/western-style-room-introduction-2.jpg"
                     room = it
                 }
 
                 RoomIntroductionImage.new {
-                    path = "/assets/image/western-style-room-introduction-3.jpg"
+                    path = "/image/western-style-room-introduction-3.jpg"
                     room = it
                 }
 
                 RoomIntroductionImage.new {
-                    path = "/assets/image/western-style-room-introduction-4.jpg"
+                    path = "/image/western-style-room-introduction-4.jpg"
                     room = it
                 }
             }
@@ -85,25 +85,25 @@ internal fun insert() {
                 type = it
                 dayFee = 10000
                 capacity = 6
-                imagePath = "/assets/image/western-style-room.jpg"
+                imagePath = "/image/japanese-western-style-room.jpg"
             }.also {
                 RoomIntroductionImage.new {
-                    path = "/assets/image/japanese-western-style-room-introduction-1.jpg"
+                    path = "/image/japanese-western-style-room-introduction-1.jpg"
                     room = it
                 }
 
                 RoomIntroductionImage.new {
-                    path = "/assets/image/japanese-western-style-room-introduction-2.jpg"
+                    path = "/image/japanese-western-style-room-introduction-2.jpg"
                     room = it
                 }
 
                 RoomIntroductionImage.new {
-                    path = "/assets/image/japanese-western-style-room-introduction-3.jpg"
+                    path = "/image/japanese-western-style-room-introduction-3.jpg"
                     room = it
                 }
 
                 RoomIntroductionImage.new {
-                    path = "/assets/image/japanese-western-style-room-introduction-4.jpg"
+                    path = "/image/japanese-western-style-room-introduction-4.jpg"
                     room = it
                 }
             }

@@ -1,8 +1,8 @@
 package io.github.piteroni.hotel.reservation.migration
 
-import io.github.piteroni.hotel.reservation.app.entities.Room
-import io.github.piteroni.hotel.reservation.app.entities.RoomIntroductionImage
-import io.github.piteroni.hotel.reservation.app.entities.RoomType
+import io.github.piteroni.hotel.reservation.app.entity.Room
+import io.github.piteroni.hotel.reservation.app.entity.RoomCatalogImage
+import io.github.piteroni.hotel.reservation.app.entity.RoomType
 import org.jetbrains.exposed.sql.transactions.transaction
 
 internal fun insert() {
@@ -19,22 +19,22 @@ internal fun insert() {
                 capacity = 4
                 imagePath = "/image/japanese-style-room.jpg"
             }.also {
-                RoomIntroductionImage.new {
+                RoomCatalogImage.new {
                     path = "/image/japanese-style-room-introduction-1.jpg"
                     room = it
                 }
 
-                RoomIntroductionImage.new {
+                RoomCatalogImage.new {
                     path = "/image/japanese-style-room-introduction-2.jpg"
                     room = it
                 }
 
-                RoomIntroductionImage.new {
+                RoomCatalogImage.new {
                     path = "/image/japanese-style-room-introduction-3.jpg"
                     room = it
                 }
 
-                RoomIntroductionImage.new {
+                RoomCatalogImage.new {
                     path = "/image/japanese-style-room-introduction-4.jpg"
                     room = it
                 }
@@ -53,22 +53,22 @@ internal fun insert() {
                 capacity = 3
                 imagePath = "/image/western-style-room.jpg"
             }.also {
-                RoomIntroductionImage.new {
+                RoomCatalogImage.new {
                     path = "/image/western-style-room-introduction-1.jpg"
                     room = it
                 }
 
-                RoomIntroductionImage.new {
+                RoomCatalogImage.new {
                     path = "/image/western-style-room-introduction-2.jpg"
                     room = it
                 }
 
-                RoomIntroductionImage.new {
+                RoomCatalogImage.new {
                     path = "/image/western-style-room-introduction-3.jpg"
                     room = it
                 }
 
-                RoomIntroductionImage.new {
+                RoomCatalogImage.new {
                     path = "/image/western-style-room-introduction-4.jpg"
                     room = it
                 }
@@ -87,22 +87,22 @@ internal fun insert() {
                 capacity = 6
                 imagePath = "/image/japanese-western-style-room.jpg"
             }.also {
-                RoomIntroductionImage.new {
+                RoomCatalogImage.new {
                     path = "/image/japanese-western-style-room-introduction-1.jpg"
                     room = it
                 }
 
-                RoomIntroductionImage.new {
+                RoomCatalogImage.new {
                     path = "/image/japanese-western-style-room-introduction-2.jpg"
                     room = it
                 }
 
-                RoomIntroductionImage.new {
+                RoomCatalogImage.new {
                     path = "/image/japanese-western-style-room-introduction-3.jpg"
                     room = it
                 }
 
-                RoomIntroductionImage.new {
+                RoomCatalogImage.new {
                     path = "/image/japanese-western-style-room-introduction-4.jpg"
                     room = it
                 }

@@ -1,4 +1,4 @@
-package io.github.piteroni.hotel.reservation.app.entities
+package io.github.piteroni.hotel.reservation.app.entity
 
 import org.jetbrains.exposed.dao.EntityID
 import org.jetbrains.exposed.dao.IntEntity

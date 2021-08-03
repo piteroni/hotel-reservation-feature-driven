@@ -1,4 +1,4 @@
-package io.github.piteroni.hotel.reservation.app.entities
+package io.github.piteroni.hotel.reservation.app.entity
 
 import org.jetbrains.exposed.dao.EntityID
 import org.jetbrains.exposed.dao.IntEntity
@@ -28,7 +28,7 @@ class Room(id: EntityID<Int>) : IntEntity(id) {
     var dayFee by Rooms.dayFee
     var capacity by Rooms.capacity
     var imagePath by Rooms.imagePath
-    val introductionImages by RoomIntroductionImage referrersOn RoomIntroductionImages.room
+    val catalogImages by RoomCatalogImage referrersOn RoomCatalogImages.room
     var createdAt by Rooms.createdAt
     var updatedAt by Rooms.updatedAt
 }

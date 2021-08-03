@@ -1,8 +1,9 @@
 package io.github.piteroni.hotel.reservation.migration
 
-import io.github.piteroni.hotel.reservation.app.entities.RoomIntroductionImages
-import io.github.piteroni.hotel.reservation.app.entities.RoomTypes
-import io.github.piteroni.hotel.reservation.app.entities.Rooms
+import io.github.piteroni.hotel.reservation.app.database.connectToDatabase
+import io.github.piteroni.hotel.reservation.app.entity.RoomCatalogImages
+import io.github.piteroni.hotel.reservation.app.entity.RoomTypes
+import io.github.piteroni.hotel.reservation.app.entity.Rooms
 import org.jetbrains.exposed.dao.IntIdTable
 import org.jetbrains.exposed.sql.SchemaUtils
 import org.jetbrains.exposed.sql.StdOutSqlLogger
@@ -19,12 +20,12 @@ internal fun migrate() {
         addLogger(StdOutSqlLogger)
         create(RoomTypes)
         create(Rooms)
-        create(RoomIntroductionImages)
+        create(RoomCatalogImages)
     }
 }
 
 fun main() {
-    connect()
+    connectToDatabase()
     migrate()
     insert()
 }

@@ -1,22 +1,5 @@
 <template>
   <div>
-    <nav>
-      <ul class="flex">
-        <li class="menu-item">
-          <a class="menu-item-link" href="#">ホーム</a>
-        </li>
-        <li class="menu-item">
-          <a class="menu-item-link" href="#">お部屋紹介</a>
-        </li>
-        <li class="menu-item">
-          <a class="menu-item-link" href="#">ご予約</a>
-        </li>
-        <li class="menu-item">
-          <a class="menu-item-link" href="#">ログイン</a>
-        </li>
-      </ul>
-    </nav>
-
     <span class="icatch">
       <img src="/image/icatch.jpg" alt="アイキャッチ">
     </span>
@@ -89,23 +72,6 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.menu-item {
-  color: #000000;
-  text-align: center;
-  list-style-type: none;
-}
-
-.menu-item-link {
-  display: block;
-  width: 129px;
-  line-height: 40px;
-  border-collapse: collapse;
-  border: 1px solid #D8D8D8;
-  font-weight: bold;
-  font-size: 16px;
-  white-space: nowrap;
-}
-
 .icatch {
   width: 542px;
   margin: 0 auto;
@@ -117,7 +83,7 @@ export default defineComponent({
 
 .section-title {
   margin-bottom: 8px;
-  padding: 0 0 0 10px;
+  padding: 12px 0 6px 10px;
   color: #5A482B;
   font-family: Georgia, "MS 明朝", "Hiragino Mincho Pro W3", "ヒラギノ明朝 Pro W3", serif;
   font-size: 12px;
